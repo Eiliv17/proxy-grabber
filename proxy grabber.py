@@ -5,14 +5,15 @@ import json
 
 class ProxyGrabber():
 
+    headers = {
+        "user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36"
+    }
+
     def __init__(self):
         self.times = []
         self.urllist = []
         self.responses = []
         self.iplist = []
-        self.headers = {
-            "user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36"
-        }
 
 
     def get_time(self):
