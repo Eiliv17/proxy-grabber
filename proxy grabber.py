@@ -23,6 +23,8 @@ class ProxyGrabber():
         timestamp.append(ctime)
         timestamp.append(ctime - datetime.timedelta(days=1))
         timestamp.append(ctime - datetime.timedelta(days=2))
+        timestamp.append(ctime - datetime.timedelta(days=3))
+        timestamp.append(ctime - datetime.timedelta(days=4))
         self.times = timestamp
 
 
